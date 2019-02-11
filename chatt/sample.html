@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html> 
+	<head>
+	<link href="css/login.css" rel="stylesheet" type="text/css"/>
+	
+<style>
+</style>	
+	<title>My website</title>
+	</head>
+
+	<body>
+	
+	<form action="#" id="sampForm">
+	<input id="charInput" type="text">
+	<p id="KeyData">Keydata here</p>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+	
+	</form><br/>
+	<!--img src="download.png" id="logo"><br/>
+	<button id="logoButton">Get Logo</button>
+	<input id="mouseInput" type="text" size="30"><br/>
+	<br/>Mouse X:<input type="text" id="mouseX"><br/>
+	Mouse Y:<input type="text" id="mouseY"><br/-->
+	
+	<script>
+	function getChar(event){
+	if(event.which == null){
+	return String.fromCharCode(event.keyCode);
+	}
+	else if(event.which !=0 && event.charCode !=0){
+	return String.fromCharCode(event.which);}
+	
+	else{ 
+	return null;}
+	} 
+	
+	document.getElementById('charInput').onkeypress = function(event){
+		var char = getChar(event || window.event)
+		if(!char) return false;
+		document.getElementById('KeyData').innerHTML = char + " was clicked";
+		return true;
+	}
+	document.getElementById('charInput').onfocus = function(event){
+		document.getElementById('KeyData').innerHTML = " clicked";
+		
+	}
+	</script>
+	</body>
+</html>

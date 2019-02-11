@@ -1,0 +1,9 @@
+Create table member(
+
+    u_name varchar(20),
+    u_password varchar(15),
+    u_email varchar(35) NOT NULL,
+    u_phone varchar(14),
+       
+    PRIMARY KEY (u_email)
+    );

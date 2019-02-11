@@ -1,0 +1,35 @@
+.modal-dialog {
+	background-color:#ddd;
+}
+
+.modal-header {
+	border-radius:5px;
+	margin-bottom:-15px;
+}
+.modal-content {
+	padding:10px;
+	background-image:url('img/bp.png');
+}
+.modal-content .form-grp{
+	padding-left:25%;
+}
+table tr td{
+	padding:10px;
+	}
+tr {
+	padding:10px;
+	}
+
+.panel-body {
+	border-left:none;
+	border-right:none;
+}	
+
+#chat {
+	margin-left: 45%;
+	min-height: 80px;
+	height: auto;
+	min-width: 100px;
+	word-wrap: break-word;
+
+}

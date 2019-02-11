@@ -1,0 +1,115 @@
+<html> 
+	<head>
+	<link href="css/login.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+		.panel-body{
+			height:300px;
+			overflow-y:scroll;
+		}
+#chat {
+	!margin-left: 49%;
+	margin-left:auto;
+	padding-bottom:10px;
+	word-wrap:break-word;
+	height:auto;
+	display:block;
+	position:static;
+	width:content;
+	max-width:200px;
+	min-width:10px;
+	}
+	input{
+		border-radius:5px; 
+	}
+	small{
+		
+		float:right;
+		display:inline-block;
+		font-size:11px;
+		color:#757575;
+		left:80%;
+		margin-top:-9%;
+		padding:3px;
+		
+	}
+	span{width:auto;}
+	#gi{background-color:#f5f5f5;border-bottom-right-radius:90%;margin-left:96%;height:3%;margin-top:-21%;transform:translatex(40%);}
+	#val{border:1px solid black;width:20%;min-height:30px;}
+	</style>
+	</head>
+
+	<body>
+	
+	<script>
+		
+		
+		$(document).ready(function(){
+			$('#send').click(function(){
+				var top=999999;
+				var t = new Date();
+				var d = t.toLocaleTimeString();
+				var u = $("#usr").html();
+				var i = document.getElementById('inpt').value.length;
+				if (i==0 || a==i){}
+				else{
+				$('#chatbox').append($('p:last').clone().text($('#inpt').val()));
+				$('#chatbox').append($('small:last').clone().text(d));
+				$('#chatbox').append($('#usr:last').clone().text(u));
+				$('#inpt').val('');
+				$('#chatbox').scrollTop(top);
+				a=0;
+				h();
+				}});
+			var i = document.getElementById('inpt').value.length;
+			var a = 0;
+			var chkk=alert;
+			$('#inpt').on({keypress:function(event){
+			if(event.which == 32){a=a+1;}
+			if(event.which == 13){$('#send').click()};
+			if(event.which==8 || event.which==46 && i==i--){a=a--;};
+			if(a>=i){a==i};
+				},
+			keydown:function(event){
+			
+			}	
+				});
+		});
+function h(){
+       var xmlhttp=new XMLHttpRequest();
+	   xmlhttp.onreadystatechange=function(){
+	   if(this.readyState==4 && this.status==200){
+	   alert(this.responseText)};
+	   };
+	   xmlhttp.open("GET","send.php?msg="+this.value,true);
+	   xmlhttp.send();
+	  
+};
+		
+	</script>
+
+	<div class="row"><br/>
+	<div class="container col-md-5 col-lg-5 col-sm-5 col-xs-12 pull-right">
+	<div class="panel panel-primary" style="margin-right:5%;">
+	<div class="panel-heading">Chat Box</div>
+	<div class="panel-body" id="chatbox">
+	<!--form action="send.php" method="post"-->
+	<span class="breadcrumb text-left">Blankpagers </span>
+<dialog><p class="breadcrumb text-left" id="chat">Chat<small class="date"></small></p><div align="right" id="gi"></div> </dialog>
+	</div>
+	<div class="panel-footer">
+	<input type="text" width="100%" name="msg" id="inpt"> <span class="btn btn-info btn-xs"  type="submit" id="send"> Send </span>
+	</div>
+	</div>
+	</div>
+	</div>
+	<script src="js/bootstrap.js" rel="javascript" type="text/js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
