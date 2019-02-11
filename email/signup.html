@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-mail Client System</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>
+<style>.row{min-height:700px;}</style>
+</head>
+<body>
+	<div class="row bg-success">
+	<div class="container">
+	<h2 class="text-center">E-mail Client System</h2>
+
+	<div class="progress text-right"><span style="margin-right:1%"><a href="index.html"> Home </a>/ Sign in </span></div><br>
+
+
+
+
+	<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 ">
+		<h4>Fillout Your Details <small> Here</small></h4><br>
+		<form action="signup.php" method="GET" style="padding-left:10%;">
+		<div class="form-grp ">
+		<label>Name </label> <input type="text" class="form-control"  required id="charInput" name="name">
+		</div><br>
+		<div class="form-grp">
+		<label >Gender </label> <br><input type="radio"  style="margin-left:10%;" name="gender" value="male"> Male
+								<input type="radio"  style="margin-left:10%;" name="gender" value="female"> FeMale
+		</div><br>
+		<div class="form-grp">
+		<label >Date Of Birth </label> <input type="date"   class="form-control" name="dob">
+		</div><br>
+		<div class="form-grp">
+		<label >E-mail </label> <input type="email"   class="form-control" name="email">
+		</div><br>
+		<div class="form-grp">
+		<label>Password</label> <input type="password" class="form-control" name="pass">
+		</div><br>
+		<div class="form-grp">
+		<label>Confirm Password</label> <input type="password" class="form-control" name="cpass">
+		</div><br>
+		<div class="form-grp">
+		<label>Mobile Number</label> <input type="text" class="form-control" name="mobile">
+		</div><br>
+		<div class="form-grp">
+		<button class="btn btn-info btn-sm" type="submit" style="padding-left:19%;padding-right:18.1%;margin-left:30%;" value=" ">Sign Up</button>
+		</div>
+		</form>
+	</div>
+
+
+
+	</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

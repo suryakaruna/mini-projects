@@ -1,0 +1,12 @@
+
+
+//mail 
+
+create table message(
+    mail_to varchar(30),
+    subject varchar(50),
+    header varchar(40),
+    message varchar(500),
+    submit timestamp
+); 
+    

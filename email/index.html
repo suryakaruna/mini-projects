@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-mail Client System</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>
+<style>.row{min-height:700px;}</style>
+</head>
+<body>
+	<div class="row bg-success">
+	<div class="container " style="padding-top:50px;">
+	<h2 class="text-center">E-mail Client System</h2>
+
+	<div class="progress text-right"><span style="margin-right:1%"><a href="index.html"> Home </a>/ Sign in </span></div><br>
+
+<br><br>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="border:none;border-right:2px solid white;">
+
+	<h4>Already Have account <small>login here</small></h4>
+	<br><form action="signin.php" method="POST">
+
+		<div class="form-grp ">
+		<label>User Id </label> <input type="text" class="form-control" id="charInput" size="25" name="usr1">
+		</div>
+
+		<div class="form-grp">
+		<label >Password </label> <input type="password" id="charIn"  class="form-control" size="25" name="pass1">
+		</div>
+
+
+
+
+		<div class="form-grp"><br/>
+		<button class="btn btn-success  " type="submit" style="padding-left:19%;padding-right:18.1%;margin-left:30%;" value=" ">Sign In</button>
+		</div>
+	</form>
+
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+		<h2 class="text-center">Don't Have Account <br><small> do signup here</small></h2>
+		<button class="btn btn-info" onclick="window.location.href='signup.html';" type="submit" style="padding-left:19%;padding-right:18.1%;margin-left:30%;" value=" ">Sign Up</button>
+	</div>
+
+
+
+
+	</div>
+<br>	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
