@@ -1,0 +1,30 @@
+h1{
+	text-align:center;
+}
+@keyframes progresss{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:100%;
+	}
+}
+
+
+.panel-heading{
+margin:-10%;	
+	
+}
+
+.panel-body{
+	font-size:1.5em;
+	font-family:Agency FB;
+	font-weight:800;
+}
+
+.panel-footer .btn{
+	width:40%;
+}
+.success{
+	background-color:green;
+}
