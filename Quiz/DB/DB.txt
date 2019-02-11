@@ -1,0 +1,17 @@
+CREATE TABLE qsn (
+    ID int NOT NULL AUTO_INCREMENT,
+    QUESTION varchar(100),
+    OPTION_1 varchar(30),
+    OPTION_2 varchar(30),
+    OPTION_3 varchar(30),
+    OPTION_4 varchar(30),
+    PRIMARY KEY (ID)
+);
+
+CREATE TABLE member(
+    id int not null AUTO_INCREMENT,
+    name varchar(35),
+    mail varchar(60),
+    pass varchar(30),
+    PRIMARY KEY(mail)
+); 

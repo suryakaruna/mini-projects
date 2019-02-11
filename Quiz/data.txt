@@ -1,0 +1,26 @@
+<qsn1>
+	<q1> what is the expansion of html </q1>
+	<op1>Hyper Tool Markup Language</op1> 
+	<op2>Hilight Text Markup Language</op2>
+	<op3>Hyper Text Markup Language</op3> 
+	<op4>Hilight Tool Markup Language</op4> 
+	<ans><op3>Hyper Text Markup Language</op3></ans>
+</qsn1>
+<qsn2>
+	<q2> qsn2 </q2>
+	<op1>choose a</op1> 
+	<op2>choose b</op2>
+	<op3>choose c</op3> 
+	<op4>choose d</op4>
+    <ans><op3>choose c</op3></ans>	
+</qsn2>
+<qsn3>
+	<q3> Questoin 3 </q3>
+	<op1>choose P</op1> 
+	<op2>choose Q</op2>
+	<op3>choose R</op3> 
+	<op4>choose S</op4> 
+	<ans><op4>choose S</op4> </ans>
+</qsn3>
+
+

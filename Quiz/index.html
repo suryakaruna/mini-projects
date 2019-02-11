@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz Management System</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>	
+	<script src="first.js"></script>	
+	
+<body>
+	<div class="row jumbotron">	
+	<div class="container " style='height:560px'>
+	<h2 class="text-center">Welcome To Our Portal</h2>
+	
+	<div class="progress text-right"><span style="margin-right:1%"><a href="index.html"> Home </a>/ Sign in </span></div><br>
+	
+	<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+		<h4>Dont Have Account <small> do sign up here</small></h4>
+		<form action="sigin.php" method="POST">
+		<div class="form-grp ">
+		<label>Name </label> <input type="text" class="form-control"  required id="charInput" name="name">
+		</div>
+		<div class="form-grp ">
+		<label>E-mail </label> <input type="email" class="form-control"  required id="charInput" name="email">
+		</div>
+		<div class="form-grp">
+		<label>Password</label> <input type="password" class="form-control" name="pass">
+		</div><br>
+		<div class="form-grp">
+		<button class="btn btn-info btn-sm" type="submit" style="padding-left:19%;padding-right:18.1%;margin-left:30%;" value=" ">Get Into Dashboard</button> 
+		</div>
+		</form>
+	</div>
+	<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12" style="border:none;border-left:2px solid white;">
+	
+	<h4>Already Have account <small>login here</small></h4>
+	<br><form action="signin.php" method="POST">
+	
+		<div class="form-grp ">
+		<label>User Id </label> <input type="text" class="form-control" id="charInput" size="25" name="usr1">
+		</div>
+
+		<div class="form-grp">
+		<label >Password </label> <input type="password" id="charIn"  class="form-control" size="25" name="pass1">
+		</div>
+		
+	
+	
+	
+		<div class="form-grp"><br/>
+		<button class="btn btn-info  " type="submit" style="padding-left:19%;padding-right:18.1%;margin-left:30%;" value=" ">Sign In</button> 
+		</div>
+	</form>	
+	
+	</div>
+		
+		
+		
+		
+	
+	</div>
+	</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
+</body>
+</html>	
+	
