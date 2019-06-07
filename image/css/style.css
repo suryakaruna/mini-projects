@@ -1,0 +1,171 @@
+*{
+    font-family: Calibri;
+}
+body{
+    margin:0;
+}
+header{
+    margin:5px 0px;
+    background: black;
+}
+
+header .brand{
+    color:white;
+    font-size:1.5rem;
+    padding: 1.5%;
+    height: 20px;
+    font-weight: lighter;
+    margin-top:-1.5vw;
+    margin-left:15vw;
+}
+header ul{
+    float:right;
+    position: absolute;
+    margin-top:-2.5vw;
+    margin-left:45vw;
+}
+ul li{
+    list-style: none;
+    display: inline;
+}
+ul li a:hover{
+    color: white;
+}
+ul li a{
+    transition: all 0.3s ease;
+    color:#ccc;
+    text-decoration: none;
+    padding: 10px;
+    font-size:0.8rem;
+    text-transform: uppercase;
+}
+
+ 
+.menu{
+    margin:-17px 0px;
+    background:rgba(96,156,94,0.85);
+    height:content;
+    
+}
+.menu ul{
+    overflow: hidden;
+    padding:10px;
+    margin-left:27vw;
+}
+.menu ul li a:hover{
+    background:rgba(47,131,43,1) ;
+}
+.menu ul li{
+     height: inherit;
+}
+.menu ul li a{
+    transition: all 0.3s ease;
+    font-size:1.01rem;
+    color:white;
+    padding: 8px 15px;
+    
+}
+ 
+main{
+    display:flex;
+}
+
+main div {
+    !border:2px solid black;
+    overflow: hidden;
+    display: inline;
+}
+main div img{
+    max-width:250px;
+    margin:10px 7px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius:5px; 
+    box-shadow: 1px 1px 2px 1px #ddd;
+}
+main .row{
+    margin-top:5vw;
+    margin-left:15vw;
+} 
+main div .caption{
+    !display: none;
+    float:left;
+    width:16.3vw;
+    font-size:0.9rem;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    text-indent: 20px;
+    font-weight:bold;
+   background: rgba(0,0,0,0.65);
+   position: absolute;
+   letter-spacing:1px;
+   margin-left:-19.5vw;
+   margin-top:11.6vw;
+   padding:7px;
+   color: white;
+}
+/* }
+main .row{
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-flow: row;
+}
+main .row div img{
+    max-width:250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius:5px; 
+    box-shadow: 1px 1px 2px 1px #ddd;
+} */
+footer{
+    padding:1vw 12vw;
+
+    margin-top:3%;
+background: rgb(34, 34, 34);
+display: block;
+min-height:180px;
+color:white;
+}
+footer div{
+    width:30%;
+    display: inline;
+    float:left;
+    margin:15px 8px;   
+    text-align: justify;
+    
+}
+footer div p{
+    font-size:1.1rem; 
+    text-transform: uppercase;
+    line-height: 15px;
+}
+footer div span{
+    font-size:0.9rem;
+}
+footer div input,footer div button{
+    margin:10px 5px;
+}
+footer div input{
+    width: 70%;
+}
+footer div button{
+    color: white;
+    background: black;
+    outline: none;
+    border: none;
+    border-radius:4px;
+    height:25px;
+    margin-left:15px;
+}
+.spl{
+    align-content: center;
+    font-size:2.5rem;
+    font-weight:500;
+    line-height: 0.3em;
+    float: right;
+    margin-right:20vw;
+    font-family: 'Righteous', cursive;
+}
